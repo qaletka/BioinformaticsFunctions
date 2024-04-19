@@ -1,9 +1,6 @@
 # Funkcja do do odwracania sekwencji DNA
 
-def gc_content(seq):
-    gc_count = seq.upper().count('G') + seq.upper().count('C')
-    total_bases = len(seq)
-    if total_bases == 0:
-        return 0
-    else:
-        return (gc_count / total_bases) * 100
+def reverse_complement(dna_sequence):
+    complement_dict = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
+    reverse_complement_sequence = ''.join(complement_dict[base] for base in reversed(dna_sequence))
+    return reverse_complement_sequence
