@@ -27,6 +27,27 @@ class TestBioinformaticsFunctions(unittest.TestCase):
         seq2 = "sitting"
         self.assertEqual(levenshtein_distance(seq1, seq2), 3)
 
+    def test_reverse_complement(self):
+        dna_sequence = 'ATGC'
+        expected_result = 'GCAT'
+        self.assertEqual(reverse_complement(dna_sequence), expected_result)
+
+        dna_sequence = 'ATCGATCGATCG'
+        expected_result = 'CGATCGATCGAT'
+        self.assertEqual(reverse_complement(dna_sequence), expected_result)
+
+        dna_sequence = 'ATCG'
+        expected_result = 'CGAT'
+        self.assertEqual(reverse_complement(dna_sequence), expected_result)
+
+        dna_sequence = 'AAA'
+        expected_result = 'TTT'
+        self.assertEqual(reverse_complement(dna_sequence), expected_result)
+
+        dna_sequence = ''
+        expected_result = ''
+        self.assertEqual(reverse_complement(dna_sequence), expected_result)
+        
 
 if __name__ == '__main__':
     unittest.main()
