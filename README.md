@@ -18,9 +18,3 @@ Tests in the TestBioinformaticsFunctions file.
 
 ## Technologies
 * Python
-
-## Status
-Project is: _in progress_
-
-## Contact
-Created by k.qaletka@gmail.com
