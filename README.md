@@ -3,8 +3,6 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Status](#status)
-* [Contact](#contact)
 
 ## General info
 Some simple functions operating on DNA.
